@@ -9,7 +9,37 @@
 <body>
     <script src="https://unpkg.com/@staticcms/core@^4.0.0/dist/static-cms.js"></script>
     <script>
-        window.CMS.init();
+        window.CMS.init({
+          config: {
+            backend: {
+              name: 'github',
+              repo: 'gamepurposeduo-cyber/Virtuecrew-Website',
+              branch: 'main',
+              site_domain: 'gamepurposeduo-cyber.github.io'
+            },
+            media_folder: '/',
+            public_folder: '/',
+            collections: [
+              {
+                name: 'homepage',
+                label: 'Homepage Content',
+                delete: false,
+                editor: { preview: false },
+                files: [
+                  {
+                    file: 'index.html',
+                    label: 'Main Landing Page',
+                    name: 'index',
+                    fields: [
+                      { label: 'Hero Title', name: 'hero_title', widget: 'string' },
+                      { label: 'Hero Subtitle', name: 'hero_subtitle', widget: 'text' }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        });
     </script>
 </body>
 </html>
