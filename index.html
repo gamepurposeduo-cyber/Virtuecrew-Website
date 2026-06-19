@@ -13,7 +13,6 @@
             font-family: 'Inter', sans-serif;
         }
     </style>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="bg-slate-950 text-slate-100 selection:bg-cyan-500 selection:text-slate-950 antialiased overflow-x-hidden">
 
@@ -264,7 +263,7 @@
 
                         <!-- Social Link Info Row -->
                         <div class="p-5 bg-slate-900/20 border border-slate-800/60 rounded-xl flex items-center justify-between">
-                            <span class="text-xs font-bold uppercase text-slate-400 tracking-wider">Follow Us</span>
+     s                  <span class="text-xs font-bold uppercase text-slate-400 tracking-wider">Follow Us</span>
                             <a href="https://instagram.com/Virtuecrew" target="_blank" class="text-sm font-semibold text-cyan-400 hover:underline">
                                 Instagram: @Virtuecrew
                             </a>
@@ -365,17 +364,6 @@
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-    </script>
-    <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
     </script>
 </body>
 </html>
