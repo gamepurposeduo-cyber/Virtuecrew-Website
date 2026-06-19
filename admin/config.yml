@@ -2,7 +2,7 @@ backend:
   name: github
   repo: gamepurposeduo-cyber/Virtuecrew-Website
   branch: main
-  base_url: https://auth.staticcms.org
+  base_url: https://proxy.decapcms.org
 
 media_folder: "/"
 public_folder: "/"
